@@ -866,7 +866,7 @@ main(int argc, char** argv)
     fprintf(stderr, "usage: cstub <header>\n");
     return(1);
   }
-  MemoryArena* arena = arena_alloc(MB(128));
+  MemoryArena* arena = arena_alloc(MB(4));
   Header_File header = header_file_alloc(arena, argv[1]);
   if (!header.data)
   {
